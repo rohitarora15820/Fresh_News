@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/Images"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Title"/>
+
+    <TextView
+
+        android:id="@+id/Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/Images"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textColor="#212321"/>
+
+
+    <TextView
+
+        android:id="@+id/Author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        android:layout_marginTop="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
